@@ -1,0 +1,32 @@
+doctype html
+html
+  head
+    title= `${title}`
+    link(rel='stylesheet', href='/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/css/styles.css')
+    link(rel='stylesheet', type='text/css', href='/css/fireMap.css')
+  body
+    //- Navbar
+    nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+        a.navbar-brand(href='#') CarpeIgnis
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+        #navbarNav.collapse.navbar-collapse
+            ul.navbar-nav
+                li.nav-item.active
+                    a.nav-link(href='/')
+                        | Home 
+                        span.sr-only (current)
+                li.nav-item
+                    a.nav-link(href='/firemap') Fire Map
+                //- li.nav-item
+                //-     a.nav-link(href='#') Pricing
+                //- li.nav-item
+                //-     a.nav-link.disabled(href='#') Disabled    
+    script(src="/js/bootstrap.min.js")
+    
+    != messages('message', locals)
+    div.container.listing-reg.jumbotron
+      h1.text-center Fire alert signup
+
+      block content

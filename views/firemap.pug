@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    -data = data || {}
+    
+    div.container.listing-reg.jumbotron
+        script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+        script(src='/js/fireMap.js')
+        h1 Fire map :
+        .mapouter
+            #map.gmap_canvas
+        script(src='https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js')
+        script(async='', defer='', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBcpCCzMbPKxJLfJXyzpCQiU7HrEu-DZcg&callback=initMap')

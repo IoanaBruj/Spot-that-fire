@@ -1,0 +1,66 @@
+extends layout
+
+block content
+    -data = data || {}
+
+    //- -if messages.success
+    //-     messages.success
+    - if (messages.success)
+    .message.success
+      span= messages.success
+
+    div.row
+        div.col-md-8.col-centered
+            form(action="./register" method="POST" class="form-registration")
+                div.form-group
+                    label(for='name' class='form-group') Name:
+                    input(
+                        type='text'
+                        id='name'
+                        name='name'
+                        placeholder='Name'
+                        class='form-control'
+                        value=data.name
+                    )
+
+                div.form-group
+                    label(for='mail') E-mail:
+                    input(
+                        type='text'
+                        id='mail'
+                        name='mail'
+                        placeholder='Email address'
+                        class='form-control'
+                        value=data.mail
+                    )
+
+                div.form-group
+                    label(for='number') Phone Number:
+                    input(
+                        type='text'
+                        id='number'
+                        name='number'
+                        placeholder='Phone Number'
+                        class='form-control'
+                        value=data.number
+                    )
+
+                div.form-group
+                    label(for='location') Location:
+                    input(
+                        type='text'
+                        id='location'
+                        name='location'
+                        placeholder='Location'
+                        class='form-control'
+                        value=data.location
+                    )
+        
+                div.row
+                    div.col-md-4.text-center.col-centered
+                        input(
+                            type="submit"
+                            value="Subscribe"
+                            class="btn btn-sm btn-primary btn-block"
+                        )
+                    

@@ -1,0 +1,37 @@
+{
+  "name": "spot-that-fire",
+  "version": "1.0.0",
+  "description": "Application to use crowdsourced data and data from NASA MODIS satellit to predict and warn about forest fires",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IoanaBruj/Spot-that-fire.git"
+  },
+  "keywords": [
+    "machine-learning",
+    "forest-fire",
+    "space-apps"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IoanaBruj/Spot-that-fire/issues"
+  },
+  "homepage": "https://github.com/IoanaBruj/Spot-that-fire#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.4",
+    "express-flash": "0.0.2",
+    "express-handlebars": "^3.0.0",
+    "express-messages": "^1.0.1",
+    "express-session": "^1.15.6",
+    "pug": "^2.0.3",
+    "sequelize": "^4.41.0",
+    "sqlite3": "^4.0.2"
+  }
+}
