@@ -71,3 +71,8 @@ typings/
 
 # Serverless directories
 .serverless
+
+# Python
+.ipynb_checkpoints
+data/
+__pycache__/
